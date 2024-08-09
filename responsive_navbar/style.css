@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+.wrapper{
+    min-height: 100vh;
+    overflow-x: hidden;
+    height: 100%;
+    background-color:#F1F5F8;
+    font-family: "Roboto Mono", monospace;
+}
+
+nav{
+    background-color: #fff;
+    letter-spacing: 3px;
+    padding: 2rem;
+}
+
+.first{
+    display: flex;
+    justify-content: space-between;
+}
+
+.toggle_btn{
+    width: 2rem;
+    height: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+
+.line{
+    background-color:#49a6ea;
+    border-radius: 0.2rem;
+    width: 100%;
+    height: 26%;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+#first_list{
+    font-size: 1.3rem;
+    color: #0091f8;
+}
+
+#second_list{
+    font-size: 1.5rem;
+}
+
+@media (max-width:1150px){
+
+    #first_list{
+        flex-direction: column;
+        margin-block:3rem
+    }
+   
+}
